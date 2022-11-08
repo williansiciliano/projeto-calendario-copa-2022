@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root { /* Criando variáveis na raiz do HTML, para que fiquem disponíveis para TODOS os elementos que existem no html */
+    --card-title-border-color: #746615;
+    --card-color-primary: #F7DD43;  
+    --card-bg-color: #241a1e;
+    --bg-color:#2c0613;
+    --cor00:#BD5376;
+    --cor01:#883C55;
+    --cor02:#BD1A51;
+    --cor03:#711031;
+    --cor04:#3D091A;
+    --cor05:#2c0613;
+    --fonteh1: 'Anton', sans-serif;
+}
+
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #bd5376ab;
+}
+
+header {
+    text-align: center;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #711031, #3D091A);
+ 
+}
+
+header > h1 {
+    padding: 10px;
+    font-family: var(--fonteh1);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+    color: var(--card-color-primary);
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: aparecer 2s forwards;
+}
+    
+header > img {
+    width: 25vw;
+    max-width: 30vh;
+    opacity: 0;
+    animation: aparecer 5s forwards;
+}
+
+header > img#mascote1 {
+    width: 25vw;
+    max-width: 30vh;
+    opacity: 0;
+    animation: aparecerDir 2s forwards;
+}
+
+header > img#mascote2 {
+    width: 25vw;
+    max-width: 30vh;
+    opacity: 0;
+    animation: aparecerEsq 2s forwards;
+}
+
+
+nav {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    padding:20px;
+    background-image: linear-gradient(to bottom, var(--cor04), var(--cor05));
+    box-shadow: 0px 7px 7px #71103050;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+    margin: 5px;
+    font-size: .9em;
+    opacity: 0;
+    animation: aparecer 5s forwards;
+    white-space: nowrap; /* EVITA QUEBRAS DE LINHA NO CONTEÚDO DO ELEMENTO */
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+    background-color: var(--cor02);
+    padding: 2px;
+    border-radius: 5px;
+    margin: 5px;
+    transform: scale(1.1);
+    
+}
+
+nav > a:visited {
+    text-decoration: none;
+    
+}
+
+nav > a:active {
+    color: #BDB12D;
+}
+
+main#fundo{
+    min-width: 300p;
+    max-width: 1345px;
+    margin: auto;
+    height: 100vh;
+    background-color: #3D091A;
+    background-image: url(./images/bg-players.jpg); 
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-bottom: 40px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 7px 7px #71103050;
+}
+
+
+footer{
+    background-color: #2c0613;
+    color: white;
+    text-align: center;
+    font-size: .9em;
+    padding: 5px;
+    box-shadow: 0px -7px 7px #71103050;
+}
+
+footer > p > a {
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor02);
+}
+
+footer > p > a:visited {
+    text-decoration: none;
+    
+}
+
+@keyframes aparecerEsq{
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes aparecerDir{
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}    
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+
+
+}
