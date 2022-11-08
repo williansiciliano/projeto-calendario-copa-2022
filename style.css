@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-:root { /* Criando variáveis na raiz do HTML, para que fiquem disponíveis para TODOS os elementos que existem no html */
+:root { /* Criando variáveis na raiz do HTML, para que fiquem disponíveis para TODOS os elementos que existem no HTML */
     --card-title-border-color: #746615;
     --card-color-primary: #F7DD43;  
     --card-bg-color: #2c0f1c;
