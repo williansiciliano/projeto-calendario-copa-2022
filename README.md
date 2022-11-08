@@ -10,6 +10,8 @@ Baseado no Evento "Next Level Week", promovido pela Rocketseat.
   <a href="#memo-licença">Licença</a>
 </p>
 
+<p align="center">ACESSE O SITE <a href="https://williansiciliano.github.io/projeto-calendario-copa-2022/" target=_blank>CLICANDO AQUI</a>!</p>
+
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
