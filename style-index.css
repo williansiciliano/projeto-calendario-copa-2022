@@ -19,7 +19,7 @@
     --cor03:#711031;
     --cor04:#3D091A;
     --cor05:#2c0613;
-    --fonteh1: Arial, sans-serif;
+    --fonteh1: Arial, Helvetica, sans-serif;
 }
 
 body *{
@@ -156,7 +156,7 @@ footer > p > a:visited {
 
 @keyframes aparecerEsq{
     0% {
-        transform: translateX(50px);
+        transform: translateX(100%);
         opacity: 0;
     } 
     100% {
@@ -167,7 +167,7 @@ footer > p > a:visited {
 
 @keyframes aparecerDir{
     0% {
-        transform: translateX(-50px);
+        transform: translateX(-100%);
         opacity: 0;
     } 
     100% {
