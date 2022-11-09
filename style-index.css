@@ -156,7 +156,7 @@ footer > p > a:visited {
 
 @keyframes aparecerEsq{
     0% {
-        transform: translateX(75%);
+        transform: translateX(50%);
         opacity: 0;
     } 
     100% {
@@ -167,7 +167,7 @@ footer > p > a:visited {
 
 @keyframes aparecerDir{
     0% {
-        transform: translateX(-75%);
+        transform: translateX(-50%);
         opacity: 0;
     } 
     100% {
