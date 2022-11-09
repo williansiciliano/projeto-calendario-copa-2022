@@ -7,7 +7,6 @@
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root { /* Criando variáveis na raiz do HTML, para que fiquem disponíveis para TODOS os elementos que existem no html */
     --card-title-border-color: #746615;
@@ -20,7 +19,7 @@
     --cor03:#711031;
     --cor04:#3D091A;
     --cor05:#2c0613;
-    --fonteh1: 'Anton', sans-serif;
+    --fonteh1: Arial, sans-serif;
 }
 
 body *{
@@ -44,7 +43,7 @@ header > h1 {
     font-family: var(--fonteh1);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
     color: var(--card-color-primary);
-    font-weight: bolder;
+    font-weight: normal;
     text-transform: uppercase;
     opacity: 0;
     animation: aparecer 2s forwards;
@@ -157,7 +156,7 @@ footer > p > a:visited {
 
 @keyframes aparecerEsq{
     0% {
-        transform: translateX(1000px);
+        transform: translateX(50px);
         opacity: 0;
     } 
     100% {
@@ -168,7 +167,7 @@ footer > p > a:visited {
 
 @keyframes aparecerDir{
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(-50px);
         opacity: 0;
     } 
     100% {
