@@ -1,3 +1,4 @@
+// Começar olhando a chamada 'document.querySelector("#cards").innerHTML =' e entender que a função 'createGame' está dentro da 'createCard'
 function createGame(player1, DateHour, player2) {
     return `
     <li>
@@ -11,7 +12,7 @@ function createGame(player1, DateHour, player2) {
 let delay = 0; // iniciando o valor da variável 'delay' para -0.4 segundos que, somando a '0,4' depois, fica ZERO.
 
 function createCard(round, games) { // esta função cria uma div class = "card" (cartãozinho de uma partida na agenda), que era o conteúdo da <main id="cards">
-    delay = delay + 0.5; // a cada card criado será adicionado 0.3s ao delay da animação (só podemos botar número na declaração da variável (0.3))
+    delay = delay + 0.5; // a cada card criado será adicionado 0.5s ao delay da animação (só podemos botar número na declaração da variável (0.5))
     return ` 
     <div class="card" style="animation-delay: ${delay}s" >
         <h2>${round}</h2>

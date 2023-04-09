@@ -310,14 +310,14 @@ Jogaremos as css abaixo para JavaScrip para o caso de ter muitos cards para anim
     }
 }
 /* Regras de Responsividade: */
-@media (min-width: 700px) {
+@media (min-width: 700px) { /* Tudo que estiver entre chaves será aplicado quando 'width > 700px' */
     #cards {
-        max-width: 670px; /* A <div id="cards"> poderá ter no máximo 670px */ /* Descobrimos este valor somando a largura de 2 cartões mais o espaço entre eles */
+        max-width: 670px; /* A <div id="cards"> poderá ter no máximo 670px quando a VP estiver acima de width=700px */ /* Descobrimos este valor somando a largura de 2 cartões mais o espaço entre eles */
         flex-direction: row;
-        flex-wrap: wrap; /* Quando a <div id="cards"> atingir width=670px, haverá quebra de linha para o próximo conteúdo  */
+        flex-wrap: wrap; /* Quando a <div id="cards"> for redimensionada e atingir width=670px, haverá quebra de linha para o próximo conteúdo  */
     }
 }
-/* Tudo que estiver entre chaves acima será aplicado quando 'width > 400px' */
+
 
 footer{
     background-color: #2c0613;
